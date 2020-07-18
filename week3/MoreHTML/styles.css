@@ -1,7 +1,10 @@
 h1 {
     color:blue;
 }
-table {
+table, th, td, tr {
     border-color: black;
     border-style: solid;
+}
+.content {
+    padding: 10px;
 }
