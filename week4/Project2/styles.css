@@ -1,0 +1,32 @@
+html {
+    font-family: 'Ranchers', cursive;
+}
+.navbar {
+    border:2px solid;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: lightblue;
+}
+.home {
+    position: absolute;
+    left: 30px;
+}
+.search {
+    position: relative;
+    left: 80px;
+}
+.main {
+    border: 2px solid gray;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: papayawhip;
+}
+.thumb-img {
+    width: 100px;
+    height: 100ox;
+    border-radius: 25px;
+}
+.description {
+    position: relative;
+    left: 10px;
+}
