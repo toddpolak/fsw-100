@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RC Car Kits</title>
+        <title>Radio Control Central</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ranchers&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Hobby World</h1>
+            <div class="navbar">
+                <span class="home effect">Home</span>
+                <span class="rc-cars effect">Cars</span>
+                <span class="rc-boats effect">Boats</span>
+                <span class="rc-planes effect">Planes</span>
+                <span Class="parts effect">Parts</span>
+                <span class="service effect">Service</span>
+                <span class="search-wrapper">
+                    <img class="search-icon" src="" />
+                    <input class="search" placeholder="Search by Part #" type="text" >
+                </span>
+            </div>
+            <div class="top">
+                <span class="c-name">Radio Control Central</span>
+            </div>
         </header>
         <main>
             <div class="main">
-                <div class="navbar">
-                    <h3 class="home">Home</h3>
-                    <h3 class="search">Search</h3>
-                </div>
-                <h3>Featured This Week ...</h3>
                 <table>
                     <thead>
-                        <span>RC Car Kits</span>
+                        <th>
+                            <h3>Featured This Week ...</h3>
+                        </th>
+                        <th>
+                            <span>Classic RC Car Kits</span>
+                        </th>
                     </thead>
                     <tbody>
                         <tr>
@@ -26,8 +41,18 @@
                                 <img class="thumb-img" src="grasshopper.jpg">
                             </td>
                             <td>
+                                <span class="items">The Grasshopper</span>
+                            </td>
+                            <td>
                                 <span class="description">
-                                    The Grasshopper
+                                    <ul>
+                                        <li>
+                                            Independent swing axle front suspension
+                                        </li>
+                                        <li>
+                                            Rolling rigid axle rear suspension
+                                        </li>
+                                    </ul>
                                 </span>
                             </td>
                         </tr>
@@ -36,8 +61,41 @@
                                 <img class="thumb-img" src="grasshopper2.jpg">
                             </td>
                             <td>
+                                <span class="items">The Grasshopper II</span>
+                            </td>
+                            <td>
                                 <span class="description">
-                                    The Grasshopper II
+                                    <ul>
+                                        <li>
+                                            Compatible with tune-up parts such as standard Type 540 motors
+                                        </li>
+                                        <li>
+                                            Nine 1150 ball bearings, one 850 ball bearing and CVA mini oil dampers
+                                        </li>
+                                    </ul>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="thumb-img" src="sand-viper.jpg">
+                            </td>
+                            <td>
+                                <span class="items">The Sand-Viper</span>
+                            </td>
+                            <td>
+                                <span>
+                                    <ul>
+                                        <li>
+                                            All-terrain 2WD buggy R/C assembly kit
+                                        </li>
+                                        <li>
+                                            Low center of gravity bathtub frame
+                                        </li>
+                                        <li>
+                                            Oil damper-equipped 4-wheel double wishbone suspension
+                                        </li>
+                                    </ul>
                                 </span>
                             </td>
                         </tr>
@@ -45,8 +103,8 @@
                 </table>
             </div>
         </main>
-        <footer>
-
+        <footer class="footer">
+            <p>&copy; 2020 Webdev Student</p>
         </footer>
     </body>
 </html>
