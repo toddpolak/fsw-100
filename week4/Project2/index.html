@@ -4,7 +4,8 @@
         <title>Radio Control Central</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ranchers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="all.css" rel="stylesheet"> 
     </head>
     <body>
         <header>
@@ -16,8 +17,8 @@
                 <span Class="parts effect">Parts</span>
                 <span class="service effect">Service</span>
                 <span class="search-wrapper">
-                    <img class="search-icon" src="" />
-                    <input class="search" placeholder="Search by Part #" type="text" >
+                    <input class="search" placeholder="Search by Part #" type="text">
+                    <a class="fas fa-search-location"></a>
                 </span>
             </div>
             <div class="top">
@@ -37,8 +38,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <img class="thumb-img" src="grasshopper.jpg">
+                            <td class="container">
+                                <div class="grow">
+                                    <img class="thumb-img" src="grasshopper.jpg">
+                                </div>
                             </td>
                             <td>
                                 <span class="items">The Grasshopper</span>
@@ -57,8 +60,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img class="thumb-img" src="grasshopper2.jpg">
+                            <td class="container">
+                                <div class="grow">
+                                    <img class="thumb-img" src="grasshopper2.jpg">
+                                </div> 
                             </td>
                             <td>
                                 <span class="items">The Grasshopper II</span>
@@ -77,14 +82,16 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img class="thumb-img" src="sand-viper.jpg">
+                            <td class="container">
+                                <div class="grow">
+                                    <img class="thumb-img" src="sand-viper.jpg">
+                                </div>
                             </td>
                             <td>
                                 <span class="items">The Sand-Viper</span>
                             </td>
                             <td>
-                                <span>
+                                <span class="description">
                                     <ul>
                                         <li>
                                             All-terrain 2WD buggy R/C assembly kit
@@ -100,6 +107,20 @@
                             </td>
                         </tr>
                     </tbody>
+                </table>
+                <table class="bottom-content">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>Questions? Ask our experts!</span>
+                            </td>
+                            <td>
+                                <textarea class="question" id="queston" name="question" rows="5" cols="50">
+                                </textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+
                 </table>
             </div>
         </main>
