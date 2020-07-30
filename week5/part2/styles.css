@@ -7,13 +7,13 @@
     margin-top: 20px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 110px);
 }
 #grid-container-2 {
     font-size: 80px;
     position: relative;
     top: 40px;
-    left: 40px;
+    left: 60px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 80px);
