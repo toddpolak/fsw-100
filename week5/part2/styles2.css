@@ -1,7 +1,7 @@
 #grid-container {
     display: grid;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 15px;
     font-size: 25px;
     grid-template-columns: 380px;
 }
@@ -27,7 +27,7 @@
 }
 @media only screen and (min-width: 768px) {
     #grid-container {
-        grid-template-columns: repeat(5, 150px);
+        grid-template-columns: repeat(5, 140px);
     }
     header {
         grid-column: 1 / 5;
