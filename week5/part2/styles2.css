@@ -35,6 +35,12 @@
     #sidebar-1 {
         grid-column: 1 / 2;
     }
+    main { 
+        grid-column: 2 / 4;
+    }
+    footer {
+        grid-column: 1 / 5;
+    }
 }
 span {
     display:block;
