@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-gap: 10px;
+    font-size: 25px;
+}
+span {
+    display:block;
+}
+header, nav, main, footer {
+    border-radius: 7px;
+    padding: 15px;
+}
+header {
+    background-color: gray;
+    color: white; 
+}
+#sidebar-1 {
+    background-color: black;
+    color: white;
+}
+main {
+    background-color: black;
+    color: white;
+}
+#sidebar-2 {
+    background-color: lightgray;
+    color: black;
+}
+footer {
+    background-color: gray;
+    color: white;
+}
+
+

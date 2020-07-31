@@ -10,7 +10,7 @@
     grid-template-columns: repeat(4, 110px);
 }
 #grid-container-2 {
-    font-size: 80px;
+    font-size: 82px;
     position: relative;
     top: 40px;
     left: 60px;
@@ -72,4 +72,5 @@
     background-color: purple;
     color: purple;
     grid-column: 4 / 5;
+    
 }
