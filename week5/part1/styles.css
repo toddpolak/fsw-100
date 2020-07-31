@@ -1,8 +1,5 @@
-.wrapper {
-    max-width: 500px;
-    margin: auto;
-}
 #grid-container {
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: repeat(9, 80px);
