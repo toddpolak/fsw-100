@@ -1,0 +1,73 @@
+.common {
+    display: inline-block;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+#box-1 {
+    background-color: royalblue;
+    transition: transform 1s linear 100ms,
+        border-radius 1s ease-out 1s,
+        background-color 1s linear 1s;
+}
+#box-1:hover {
+    transform: rotate(360deg);
+    border-radius: 100%;
+    background-color: darkgreen;
+}
+#box-2 {
+    background-color: white;
+    border: 1px solid black;
+    transition: border 1s linear 1s,
+        box-shadow 1s linear 1s,
+        border-radius 1s linear 1s,
+        background-color 1s linear 1s;
+}
+#box-2:hover {
+    border: 10px solid purple;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 50%;
+    background-color: gold;
+}
+#box-3 {
+    background-color: maroon;
+    transition: background-color 1s ease 1s,
+        border-radius 1s linear 1s,
+        transform 1s linear 1s,
+        opacity 500ms linear 500ms;
+}
+#box-3:hover {
+    transform: rotateY(180deg);
+    background-color: midnightblue;
+    opacity: 0.5;
+}
+#box-4 {
+    background-color: rgb(240, 240, 3);
+    transition: transform 500ms linear 500ms,
+        border-radius 1ms linear 1ms;
+}
+#box-4:hover {
+    transform: rotate(-360deg);
+    transform: rotateX(180deg);
+    border-radius: 15px 50px;
+}
+#box-5 {
+    background-color: mediumorchid;
+        transition: transform 1ms step-start 100ms,
+        background-color 500ms linear 1s;
+}
+#box-5:hover {
+    transform: rotate3d(1, 2, -1, 192deg);
+    background-color: black;
+}
+#box-6 {
+    background-color: teal;
+    transition: width 500ms linear 500ms,
+        height 500ms linear 500ms,
+        background-color 1s linear 1s,
+}
+#box-6:hover {
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+}
