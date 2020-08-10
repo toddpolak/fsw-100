@@ -1,28 +1,26 @@
-
 body {
   font-family: 'Arimo', sans-serif;
 }
-
 #grid-container {
   display: grid;
   justify-content: center;
   grid-gap: 15px;
   grid-template-columns: repeat(1, 380px);
 }
-
 main {
   display: flex;
 }
-
 #main-content {
   flex: 1 1 auto;
 }
-
 #main-img {
   width: 85px;
   height: 100px;
 }
-
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
 @media only screen and (min-width: 600px) and (max-width: 768px){
   #grid-container {
     grid-template-columns: repeat(4, 130px);
@@ -32,12 +30,15 @@ main {
   }
   nav {
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   main { 
     display: flex;
     grid-column: 2 / 5;
   }
-
   footer {
     grid-column: 1 / 5;
   }
@@ -46,9 +47,7 @@ main {
     width: 138px;
     height: 162px;
   }
-
 }
-
 @media only screen and (min-width: 768px) {
   #grid-container {
     grid-template-columns: repeat(5, 140px);
@@ -58,6 +57,10 @@ main {
   }
   nav {
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   main { 
     display: flex;
@@ -66,34 +69,41 @@ main {
   footer {
     grid-column: 1 / 6;
   }
-
   #main-img {
     width: 223px;
     height: 262px;
   }
-
+  nav a:hover {
+    text-decoration: underline;
+  }
 }
-
 span {
   display:block;
 }
-
 header {
   font-size: 40px;
   background-color: cornflowerblue;
 }
-
 nav {
   background-color: lightgray;
 }
-
 footer {
   border: 1px solid black;
   background-color: cornflowerblue;
   padding: 10px;
 }
-
 header, nav, main {
   border: 1px solid black;
   padding: 15px;
+}
+.noul {
+  text-decoration: none;
+}
+.today {
+  font-size: 15px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+.todays-command {
+  font-style: italic;
 }

@@ -8,39 +8,47 @@
     <body>
         <div id="grid-container">
             <header>The LINUX Experts</header>
-
-            <nav>Menu</nav>
-
+            <nav>
+              <a class="noul" href="#">Home</a>
+              <a class="noul" href="#">Distributions</a>
+              <a class="noul" href="#">Installations</a>
+              <a class="noul" href="#">Blog</a>
+              <a class="noul" href="#">About</a>
+            </nav>
             <main>
               <div id="main-content">
                 <span><h2>Welcome</h2></span>
-                <span>We are experts with LINUX. Whether its installations, configurations or technical support we're here for you.</span>
+                <span>We are experts with LINUX. Whether its installations, configurations or technical support we're here to help.</span>
                 <div>
                   <h4>Popular Distributions:</h4>
                   <ul>
                     <li><a href="https://www.linuxmint.com/download.php">Mint</a></li>
                     <li><a href="https://access.redhat.com/downloads">Red Hat</a></li>
                     <li><a href="https://www.mageia.org/en/downloads/">Mageia</a></li>
+                    <li><a href="https://neptuneos.com/en/start-page.html">Neptune</a></li>
                     <li><a href="https://getsol.us/download/">Solus</a></li>
                   </ul>
                 </div>
                 <div>
-
-                  <table>
+                  <table class="today">
                     <thead>
                       <th>
-                        Table Header
+                        Command of the Day
                       </th>
                     </thead>
                     <tbody>
                       <tr>
+                        <td class="todays-command">
+                          command: cat
+                        </td>
+                      </tr>
+                      <tr>
                         <td>
-                          Table Cell
+                        The cat command will allow you to see an entire file in your terminal quickly. This is more useful for smaller files unless you're grepping for certain things.
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                  
                 </div>
               </div>
               <img id="main-img" src="images/linux.jpg" />
