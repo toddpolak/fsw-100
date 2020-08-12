@@ -1,6 +1,20 @@
 body {
   font-family: 'Arimo', sans-serif;
+  /*
+  font-family: 'Staatliches', cursive;
+  */
 }
+span {
+  display:block;
+}
+header, nav, main {
+  border: 1px solid black;
+}
+
+.no-ul {
+  text-decoration: none;
+}
+/*#region Mobile First*/
 #grid-container {
   display: grid;
   justify-content: center;
@@ -8,49 +22,31 @@ body {
   grid-template-columns: repeat(1, 380px);
 }
 main {
+  background-color: white;
   display: flex;
 }
 #main-content {
   flex: 1 1 auto;
 }
-#main-img {
-  width: 85px;
-  height: 100px;
-}
 nav {
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
 }
-span {
-  display:block;
-}
 header {
   font-size: 40px;
-  background-color: cornflowerblue;
 }
 nav {
-  background-color: lightgray;
+  background-color: white;
 }
 footer {
+  background-color: white;
   border: 1px solid black;
-  background-color: cornflowerblue;
   padding: 10px;
 }
-header, nav, main {
-  border: 1px solid black;
-  padding: 15px;
-}
-.noul {
-  text-decoration: none;
-}
-.today {
-  font-size: 15px;
-  border: 1px solid lightgrey;
-  padding: 20px;
-}
-.todays-command {
-  font-style: italic;
-}
+/*#endregion*/
+
+/*#region Tablet*/
 @media only screen and (min-width: 600px) and (max-width: 768px){
   #grid-container {
     grid-template-columns: repeat(4, 130px);
@@ -68,16 +64,23 @@ header, nav, main {
   main { 
     display: flex;
     grid-column: 2 / 5;
+
+    padding:10px;
+
+    background-image: url("images/main-img-tablet2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 398px;
+    height: 337px;
+    
   }
   footer {
     grid-column: 1 / 5;
   }
-
-  #main-img {
-    width: 138px;
-    height: 162px;
-  }
 }
+/*#endregion*/
+
+/*#region Desktop*/
 @media only screen and (min-width: 768px) {
   #grid-container {
     grid-template-columns: repeat(5, 140px);
@@ -95,15 +98,20 @@ header, nav, main {
   main { 
     display: flex;
     grid-column: 2 / 6;
+    
+    padding: 15px;
+    background-image: url("images/main-img-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 573px;
+    height: 485px;
+    
   }
   footer {
     grid-column: 1 / 6;
-  }
-  #main-img {
-    width: 223px;
-    height: 262px;
   }
   nav a:hover {
     text-decoration: underline;
   }
 }
+/*#endregion*/
