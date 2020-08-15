@@ -40,6 +40,7 @@ nav, main, footer {
   border: 1px solid black;
 }
 main.home {
+  display: flex;
   padding: 5px;
   background-image: url("images/main-img-mobile.jpg");
   background-repeat: no-repeat;
@@ -47,21 +48,35 @@ main.home {
   width: 368px;
   height: 312px;
 }
-.main-content-header {
+.home-page-header {
   position: absolute;
 }
-.main-content {
+.home-page-content {
   position: absolute;
   margin-top: 100px;
   margin-left: 70px;
 }
 main.projects {
+  display: flex;
   padding: 5px;
+  height: 500px;
 }
-main.about {
+.projects span {
+  font-size: 20px;
+}
+.tbl-project {
+  position: absolute;
+  margin-top: 50px;
+}
+.project-header {
+  font-size: 20px;
+}
+main.contact {
+  display: flex;
   padding: 5px;
 }
 footer {
+  display: flex;
   background-color: white;
   padding: 5px;
 }
@@ -69,7 +84,8 @@ footer {
   text-decoration: none;
 }
 .s-media {
-  margin-left: 100px;
+  position: relative;
+  margin-left: 130px;
 }
 .s-media-icon {
   width: 15px;
@@ -92,30 +108,21 @@ footer {
     flex-direction: column;
   }
   main.home { 
-    display: flex;
     grid-column: 2 / 5;
     padding:10px;
     background-image: url("images/main-img-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 398px;
     height: 337px;
   }
-  .main-content-header {
-    position: absolute;
-  }
-  .main-content {
-    position: absolute;
+  .home-page-content {
     margin-top: 100px;
     margin-left: 70px;
   }
   main.projects {
-    display: flex;
     grid-column: 2 / 5;
     padding: 10px;
   }
-  main.about {
-    display: flex;
+  main.contact {
     grid-column: 2 / 5;
     padding: 10px;
   }
@@ -123,7 +130,6 @@ footer {
     grid-column: 1 / 5;
   }
   .s-media {
-    position: relative;
     margin-left: 300px;
   }
   .s-media-icon {
@@ -131,7 +137,7 @@ footer {
     height: 20px;
   }
 }
-  /*#endregion*/
+/*#endregion*/
 /*#region Desktop*/
 @media only screen and (min-width: 768px) {
   #grid-container {
@@ -149,42 +155,27 @@ footer {
     flex-direction: column;
   }
   main.home { 
-    display: flex;
     grid-column: 2 / 6;
     padding: 15px;
     background-image: url("images/main-img-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 573px;
     height: 485px;
   }
-  .main-content-header {
-    position: absolute;
+  .home-page-header {
     margin-top: 20px;
   }
-  .main-content {
-    position: absolute;
+  .home-page-content {
     margin-top: 100px;
     margin-left: 70px;
   }
   main.projects {
-    display: flex;
     grid-column: 2 / 5;
     padding: 10px;
-    height: 500px;
     width: 585px;
   }
-  main.contact {
-    display: flex;
-    grid-column: 2 / 5;
-    padding: 10px;
-    height: 500px;
-    width: 585px;
-  }
-  .tbl-project {
-    position: absolute;
-    margin-top: 50px;
-  }
+
+
+
   #trunk {
     position: absolute;
     margin-top: 280px;
@@ -232,14 +223,21 @@ footer {
     width: 200px;
     height: 51px;
   }
+
+
+  
+  main.contact {
+    grid-column: 2 / 5;
+    padding: 10px;
+    height: 500px;
+    width: 585px;
+  }
   footer {
-    display: flex;
     grid-column: 1 / 6;
     align-items: center;
   }
   .s-media {
-    position: absolute;
-    margin-left: 450px;
+    margin-left: 475px;
   }
   .s-media-icon {
     width: 25px;
