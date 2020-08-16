@@ -57,13 +57,8 @@ main.home {
 }
 main.about {
   display: flex;
-  padding: 5px;
-  height: 500px;
-}
-main.projects {
-  display: flex;
-  padding: 5px;
-  height: 500px;
+  padding: 15px;
+  height: 400px;
 }
 .about-page-content {
   background-image: url("images/cars-mobile.jpg");
@@ -71,7 +66,9 @@ main.projects {
   background-position: bottom;
 }
 main.projects {
-  height: 600px;
+  display: flex;
+  padding: 5px;
+  height: 520px;
 }
 .projects span {
   font-size: 20px;
@@ -126,23 +123,24 @@ main.projects {
   width: 306px;
   height: 129px;
   position: absolute;
-  margin-top: 450px;
+  margin-top: 385px;
 }
 main.contact {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 5px;
 }
 .contact-us {
-  float: left;
   width: 50%;
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 10px;
 }
 input[type=text], select, textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-bottom: 5px;
   resize: none;
 }
@@ -156,6 +154,9 @@ input[type=submit] {
   border: 1px solid black;
   cursor: pointer;
 }
+input[type=submit]:hover {
+  background-color: #363839;
+}
 main.contact-submit {
   display: flex;
   padding: 5px;
@@ -164,9 +165,9 @@ main.contact-submit {
 .borla-logo {
   position: absolute;
   margin-top: 400px;
+  margin-left: 190px;
   width: 175px;
   height: 88px;
-  margin-left: 190px;
 }
 .edelbrock-logo {
   position: absolute;
@@ -229,12 +230,11 @@ footer {
   }
   main.projects {
     grid-column: 2 / 5;
-    padding: 10px;
+    padding: 20px;
+    height: 550px;
   }
   .about-page-content {
     background-image: url("images/cars-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
   }
   #trunk {
     margin-top: 280px;
@@ -265,6 +265,9 @@ footer {
     -ms-transform: scale(3);
     transform: scale(3);
   }
+  .vossen-logo {
+    margin-top: 420px;
+  }
   main.contact {
     grid-column: 2 / 5;
     padding: 10px;
@@ -275,9 +278,9 @@ footer {
   }
   .borla-logo {
     margin-top: 400px;
+    margin-left: 200px;
     width: 200px;
     height: 100px;
-    margin-left: 200px;
   }
   .edelbrock-logo {
     margin-top: 400px;
@@ -319,7 +322,7 @@ footer {
   }
   main.home { 
     grid-column: 2 / 6;
-    padding: 15px;
+    padding: 10px;
     background-image: url("images/main-img-desktop.jpg");
     height: 485px;
   }
@@ -329,15 +332,15 @@ footer {
   main.about {
     grid-column: 2 / 6;
     padding: 20px;
-
+    height: 480px;
   }
   .about-page-content {
     background-image: url("images/cars-desktop.jpg");
-    background-repeat: no-repeat;
   }
   main.projects {
     grid-column: 2 / 6;
     padding: 10px;
+    height: 600px;
   }
   #trunk {
     margin-top: 280px;
@@ -368,6 +371,9 @@ footer {
     -ms-transform: scale(3);
     transform: scale(3);
   }
+  .vossen-logo {
+    margin-top: 470px;
+  }
   main.contact {
     grid-column: 2 / 6;
     padding: 10px;
@@ -379,9 +385,9 @@ footer {
   }
   .borla-logo {
     margin-top: 400px;
+    margin-left: 300px;
     width: 200px;
     height: 100px;
-    margin-left: 300px;
   }
   .edelbrock-logo {
     margin-top: 400px;
