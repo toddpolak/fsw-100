@@ -55,10 +55,23 @@ main.home {
   position: absolute;
   top: 180px;
 }
+main.about {
+  display: flex;
+  padding: 5px;
+  height: 500px;
+}
 main.projects {
   display: flex;
   padding: 5px;
   height: 500px;
+}
+.about-page-content {
+  background-image: url("images/cars-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+main.projects {
+  height: 600px;
 }
 .projects span {
   font-size: 20px;
@@ -109,6 +122,12 @@ main.projects {
   transform: scale(2);
   transition: 1s ease;
 }
+.vossen-logo {
+  width: 306px;
+  height: 129px;
+  position: absolute;
+  margin-top: 450px;
+}
 main.contact {
   display: flex;
   padding: 5px;
@@ -147,18 +166,19 @@ main.contact-submit {
   margin-top: 400px;
   width: 175px;
   height: 88px;
+  margin-left: 190px;
 }
 .edelbrock-logo {
   position: absolute;
   margin-top: 400px;
-  margin-left: 160px;
+  margin-left: 10px;
   width: 200px; 
   height: 72px;
 }
 .baer-logo {
   position : absolute;
   margin-top: 350px;
-  margin-left: 20px;
+  margin-left: 150px;
   width: 200px;
   height: 51px;
 }
@@ -203,9 +223,18 @@ footer {
   .home-page-content {
     top: 160px;
   }
+  main.about {
+    grid-column: 2 / 5;
+    padding: 10px;
+  }
   main.projects {
     grid-column: 2 / 5;
     padding: 10px;
+  }
+  .about-page-content {
+    background-image: url("images/cars-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   #trunk {
     margin-top: 280px;
@@ -248,16 +277,17 @@ footer {
     margin-top: 400px;
     width: 200px;
     height: 100px;
+    margin-left: 200px;
   }
   .edelbrock-logo {
     margin-top: 400px;
-    margin-left: 180px;
+    margin-left: 20px;
     width: 200px; 
-    height: 72;
+    height: 72px;
   }
   .baer-logo {
     margin-top: 350px;
-    margin-left: 20px;
+    margin-left: 180px;
   }
   footer {
     grid-column: 1 / 5;
@@ -295,6 +325,15 @@ footer {
   }
   .home-page-content {
     top: 180px;
+  }
+  main.about {
+    grid-column: 2 / 6;
+    padding: 20px;
+
+  }
+  .about-page-content {
+    background-image: url("images/cars-desktop.jpg");
+    background-repeat: no-repeat;
   }
   main.projects {
     grid-column: 2 / 6;
@@ -342,16 +381,17 @@ footer {
     margin-top: 400px;
     width: 200px;
     height: 100px;
+    margin-left: 300px;
   }
   .edelbrock-logo {
     margin-top: 400px;
-    margin-left: 300px;
+    margin-left: 20px;
     width: 200px; 
-    height: 72;
+    height: 72px;
   }
   .baer-logo {
     margin-top: 350px;
-    margin-left: 20px;
+    margin-left: 300px;
   }
   footer {
     grid-column: 1 / 6;
