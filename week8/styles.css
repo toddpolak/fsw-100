@@ -1,0 +1,23 @@
+body {
+    font-family: 'arial', 'sans-serif';
+}
+#container {
+    padding: 10px;
+}
+#container img {
+    width: 200px;
+    float: left;
+}
+#container :nth-child(2) {
+    display: inline;
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #container img {
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #container img {
+        width: 500px;
+    }
+}
