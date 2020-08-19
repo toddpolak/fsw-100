@@ -1,5 +1,6 @@
 body {
     font-family: 'arial', 'sans-serif';
+    font-size: 15px;
 }
 #container {
     padding: 10px;
@@ -11,13 +12,31 @@ body {
 #container :nth-child(2) {
     display: inline;
 }
+.btm-img {
+    width: 256px;
+    height: 124px;
+    border-radius: 25px;
+}
 @media only screen and (min-width: 600px) and (max-width: 768px){
     #container img {
         width: 400px;
     }
+    .btm-img {
+        width: 384px;
+        height: 186px;
+    }
 }
 @media only screen and (min-width: 768px) {
+
+    #container {
+        width: 768px;
+    }
+
     #container img {
         width: 500px;
+    }
+    .btm-img {
+        width: 512px;
+        height: 248px;
     }
 }
